@@ -18,7 +18,7 @@ struct ContentView: View {
                 LightView(color: .green)
                 Spacer()
             }
-            .padding(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
+            .padding(.top)
         }
     }
 }
