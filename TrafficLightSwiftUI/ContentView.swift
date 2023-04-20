@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+        
     @State var opacityForRedLight: Double = 0.3
     @State var opacityForYellowLight: Double = 0.3
     @State var opacityForGreenLight: Double = 0.3
@@ -38,9 +38,8 @@ struct ContentView: View {
                                 .stroke(Color.white,lineWidth: 4)
                         )
                 }
-                .padding()
             }
-            .padding(.top)
+            .padding()
             
         }
     }
