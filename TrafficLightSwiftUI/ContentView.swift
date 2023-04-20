@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-        
+    let turnOff: Double = 0.3
+    let turnOn: Double = 1
+    
+    @State var buttonText = "START"
     @State var opacityForRedLight: Double = 0.3
     @State var opacityForYellowLight: Double = 0.3
     @State var opacityForGreenLight: Double = 0.3
-    
-    @State var buttonText = "START"
     
     var body: some View {
         ZStack {
@@ -45,9 +46,6 @@ struct ContentView: View {
     }
     
     private func changeColorLight() {
-        let turnOff: Double = 0.3
-        let turnOn: Double = 1
-        
         buttonText = "NEXT"
     
         if opacityForRedLight == turnOn {

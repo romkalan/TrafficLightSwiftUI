@@ -25,6 +25,6 @@ struct LightView: View {
 
 struct LightView_Previews: PreviewProvider {
     static var previews: some View {
-        LightView(color: .cyan, opacity: 0.3)
+        LightView(color: .purple, opacity: 0.3)
     }
 }
