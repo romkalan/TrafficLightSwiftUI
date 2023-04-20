@@ -12,7 +12,6 @@
 		ADE10E4529F1136700A552F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE10E4429F1136700A552F4 /* Assets.xcassets */; };
 		ADE10E4829F1136700A552F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE10E4729F1136700A552F4 /* Preview Assets.xcassets */; };
 		ADE10E4F29F1170B00A552F4 /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE10E4E29F1170B00A552F4 /* LightView.swift */; };
-		ADE10E5129F1171B00A552F4 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE10E5029F1171B00A552F4 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +21,6 @@
 		ADE10E4429F1136700A552F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADE10E4729F1136700A552F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADE10E4E29F1170B00A552F4 /* LightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
-		ADE10E5029F1171B00A552F4 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +56,6 @@
 				ADE10E4029F1136600A552F4 /* TrafficLightSwiftUIApp.swift */,
 				ADE10E4229F1136600A552F4 /* ContentView.swift */,
 				ADE10E4E29F1170B00A552F4 /* LightView.swift */,
-				ADE10E5029F1171B00A552F4 /* ButtonView.swift */,
 				ADE10E4429F1136700A552F4 /* Assets.xcassets */,
 				ADE10E4629F1136700A552F4 /* Preview Content */,
 			);
@@ -145,7 +142,6 @@
 			files = (
 				ADE10E4329F1136600A552F4 /* ContentView.swift in Sources */,
 				ADE10E4F29F1170B00A552F4 /* LightView.swift in Sources */,
-				ADE10E5129F1171B00A552F4 /* ButtonView.swift in Sources */,
 				ADE10E4129F1136600A552F4 /* TrafficLightSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
