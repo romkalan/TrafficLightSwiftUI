@@ -7,10 +7,15 @@
 
 import SwiftUI
 
+enum CurrentLight {
+    case red, yellow, green
+}
+
 struct ContentView: View {
     let turnOff: Double = 0.3
     let turnOn: Double = 1
     
+    @State var currentLight = CurrentLight.red
     @State var buttonText = "START"
     @State var opacityForRedLight: Double = 0.3
     @State var opacityForYellowLight: Double = 0.3
@@ -47,19 +52,20 @@ struct ContentView: View {
     
     private func changeColorLight() {
         buttonText = "NEXT"
-    
-        if opacityForRedLight == turnOn {
-            opacityForRedLight = turnOff
-            opacityForGreenLight = turnOff
-            opacityForYellowLight = turnOn
-        } else if opacityForYellowLight == turnOn {
-            opacityForRedLight = turnOff
-            opacityForYellowLight = turnOff
-            opacityForGreenLight = turnOn
-        } else {
-            opacityForYellowLight = turnOff
+        
+        switch currentLight {
+        case .red:
             opacityForGreenLight = turnOff
             opacityForRedLight = turnOn
+            currentLight = CurrentLight.yellow
+        case .yellow:
+            opacityForRedLight = turnOff
+            opacityForYellowLight = turnOn
+            currentLight = CurrentLight.green
+        case .green:
+            opacityForYellowLight = turnOff
+            opacityForGreenLight = turnOn
+            currentLight = CurrentLight.red
         }
     }
 }
