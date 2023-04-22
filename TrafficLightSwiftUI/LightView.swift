@@ -17,7 +17,6 @@ struct LightView: View {
             .frame(width: 100, height: 100)
             .overlay(Circle().stroke(Color.white, lineWidth: 5))
             .opacity(opacity)
-            .padding(.bottom)
     }
 }
 

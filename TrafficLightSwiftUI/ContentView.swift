@@ -12,11 +12,11 @@ enum CurrentLight {
 }
 
 struct ContentView: View {
-    @State var currentLight = CurrentLight.red
-    @State var buttonText = "START"
-    @State var opacityForRedLight: Double = 0.3
-    @State var opacityForYellowLight: Double = 0.3
-    @State var opacityForGreenLight: Double = 0.3
+    @State private var currentLight = CurrentLight.red
+    @State private var buttonText = "START"
+    @State private var opacityForRedLight = 0.3
+    @State private var opacityForYellowLight = 0.3
+    @State private var opacityForGreenLight = 0.3
     
     var body: some View {
         ZStack {
@@ -24,7 +24,9 @@ struct ContentView: View {
                 .ignoresSafeArea()
             VStack {
                 LightView(color: .red, opacity: opacityForRedLight)
+                    .padding(.bottom)
                 LightView(color: .yellow, opacity: opacityForYellowLight)
+                    .padding(.bottom)
                 LightView(color: .green, opacity: opacityForGreenLight)
                 
                 Spacer()
@@ -48,10 +50,12 @@ struct ContentView: View {
     }
     
     private func changeColorLight() {
-        let lightTurnOff: Double = 0.3
-        let lightTurnOn: Double = 1
+        let lightTurnOff = 0.3
+        let lightTurnOn = 1.0
         
-        buttonText = "NEXT"
+        if buttonText == "START" {
+            buttonText = "NEXT"
+        }
         
         switch currentLight {
         case .red:
