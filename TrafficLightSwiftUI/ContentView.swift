@@ -30,19 +30,8 @@ struct ContentView: View {
                 LightView(color: .green, opacity: opacityForGreenLight)
                 
                 Spacer()
-                                
-                Button(action: changeColorLight) {
-                    Text(buttonText)
-                        .font(.title2)
-                        .foregroundColor(.white)
-                        .frame(width: 200, height: 50)
-                        .background(.blue)
-                        .cornerRadius(15)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 15)
-                                .stroke(Color.white,lineWidth: 4)
-                        )
-                }
+                
+                ButtonView(text: buttonText, action: changeColorLight)
             }
             .padding()
             
