@@ -12,9 +12,6 @@ enum CurrentLight {
 }
 
 struct ContentView: View {
-    let lightTurnOff: Double = 0.3
-    let lightTurnOn: Double = 1
-    
     @State var currentLight = CurrentLight.red
     @State var buttonText = "START"
     @State var opacityForRedLight: Double = 0.3
@@ -51,6 +48,9 @@ struct ContentView: View {
     }
     
     private func changeColorLight() {
+        let lightTurnOff: Double = 0.3
+        let lightTurnOn: Double = 1
+        
         buttonText = "NEXT"
         
         switch currentLight {
