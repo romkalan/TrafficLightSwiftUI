@@ -16,14 +16,14 @@ struct ButtonView: View {
             Text(text)
                 .font(.title2)
                 .foregroundColor(.white)
-                .frame(width: 200, height: 50)
-                .background(.blue)
-                .cornerRadius(15)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 15)
-                        .stroke(Color.white,lineWidth: 4)
-                )
         }
+        .frame(width: 200, height: 50)
+        .background(.blue)
+        .cornerRadius(15)
+        .overlay(
+            RoundedRectangle(cornerRadius: 15)
+                .stroke(Color.white,lineWidth: 4)
+        )
     }
 }
 
